@@ -2,41 +2,36 @@ import noUiSlider from 'nouislider';
 
 export function range() {
 	console.log('range works');
-	const rangeSlider = document.getElementById('range-slider');
 
-	if (rangeSlider) {
-		noUiSlider.create(rangeSlider, {
-		start: [500, 999999],
-			connect: true,
-			step: 1,
+	const priceRange = document.getElementById('range');
+	const priceMinInput = document.getElementById('price-min');
+	const priceMaxInput = document.getElementById('price-max');
+
+	noUiSlider.create(priceRange, {
+		start: [10, 200],
+		connect: true,
 		range: {
-				'min': [500],
-				'max': [999999]
+			min: 0,
+			max: 500
+		},
+		step: 5,
+		tooltips: true,
+		format: {
+			to: function (value) {
+				return '$' + value.toFixed(0); // Форматируем как валюту
+			},
+			from: function (value) {
+				return value.replace('$', '');
+			}
 		}
-		});
-	
-		const input0 = document.getElementById('input-0');
-		const input1 = document.getElementById('input-1');
-		const inputs = [input0, input1];
-	
-		rangeSlider.noUiSlider.on('update', function(values, handle){
-			inputs[handle].value = Math.round(values[handle]);
-		});
-	
-		const setRangeSlider = (i, value) => {
-			let arr = [null, null];
-			arr[i] = value;
-	
-			console.log(arr);
-	
-			rangeSlider.noUiSlider.set(arr);
-		};
-	
-		inputs.forEach((el, index) => {
-			el.addEventListener('change', (e) => {
-				console.log(index);
-				setRangeSlider(index, e.currentTarget.value);
-			});
-		});
-	}
+	});
+
+	priceRange.noUiSlider.on('update', function (values, handle) {
+		if (handle === 0) {
+			priceMinInput.value = values[0];
+		} else {
+			priceMaxInput.value = values[1];
+		}
+	});
+
 }

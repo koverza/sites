@@ -1,15 +1,12 @@
 .header {
   width: 100%;
-  position: relative;
+  // position: sticky;
+  // top: 0;
   &__inner {
-    width: 100%;
-    top: -100px;
-    transition: all 350ms ease;
+    position: relative;
+    
   }
-  &__inner.active {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0;
-  } // for toTop and other
+
+  // &менюсвайпа{} 
+  // &менюсвайпа.active {}
 }

@@ -1,19 +1,10 @@
-.button{}
-.button:hover{}
-.button.active{}
+.title {
 
-.input{}
-.input::placeholder{}
-.input:hover{}
-.input:focus{}
+}
 
-.title{}
-.subtitle{}
+.subtitle {
 
-// Bread crumbs
-.bread__crumbs{}
-.bread__crumbs-link{}
-.bread__crumbs-text{}
+}
 
 // ...
 // display: -webkit-box;
@@ -21,55 +12,54 @@
 // -webkit-box-orient: vertical;
 // overflow: hidden;
 
-// выделение кнопки
-// -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-// -webkit-tap-highlight-color: transparent;
-
-/* полоса прокрутки (скроллбар) */
-::-webkit-scrollbar {
-    width: 10px; /* ширина для вертикального скролла */
-    height: 8px; /* высота для горизонтального скролла */
-    background-color:  #c6c6c6;
-}
-
-/* ползунок скроллбара */
-::-webkit-scrollbar-thumb {
-    background-color:  #7f7f7f;
-    border-radius: 9em;
-    width: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #253861;
-}
-
-/* Стрелки */
-// ::-webkit-scrollbar-button:vertical:start:decrement {
-//     background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-//     background-color: #f6f8f4;
+// [class*="-ibg"] {
+// 	position: relative;
+// 	img {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		object-fit: cover;
+// 	}
 // }
-
-// ::-webkit-scrollbar-button:vertical:end:increment {
-//     background:
-//         linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-//     background-color: #f6f8f4;
+// [class*="-ibg_contain"] {
+// 	img {
+// 		object-fit: contain;
+// 	}
 // }
-
-// ::-webkit-scrollbar-button:horizontal:start:decrement {
-//     background:
-//         linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-//     background-color: #f6f8f4;
+// Адаптивне відео
+// %responsiveVideo {
+// 	position: relative;
+// 	overflow: hidden;
+// 	height: 0;
+// 	padding-bottom: 56.25%;
+// 	video,
+// 	iframe,
+// 	object,
+// 	embed {
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 100%;
+// 	}
 // }
-
-// ::-webkit-scrollbar-button:horizontal:end:increment {
-//     background:
-//         linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-//         linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-//     background-color: #f6f8f4;
+// // Відео як фон
+// %videoBackground {
+// 	video,
+// 	iframe,
+// 	object,
+// 	embed {
+// 		position: fixed;
+// 		top: 50%;
+// 		left: 50%;
+// 		min-width: 100%;
+// 		min-height: 100%;
+// 		width: auto;
+// 		height: auto;
+// 		z-index: -100;
+// 		transform: translateX(-50%) translateY(-50%);
+// 		background-size: cover;
+// 	}
 // }

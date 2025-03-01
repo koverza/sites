@@ -1,104 +1,93 @@
-/* Variables */
-@import "../variables";
-
-/* Zero */
-@import "../reset";
-
-/* Mixins */
-@import "../mixins";
-
-/* Templates */
-@import "../templates";
-
-/* Header */
-@import "../header";
-
-/* Footer */
-@import "../footer";
-
 /* Fonts */
-// @import "fonts";
-
-/* Ibg */
-// @import "ibg"; // --- NEW 
-
-/* Font Awesome */
-@import "all.scss"; // without var transform and var animation-delay
-
-/* Animation */
-// @import "animation";
+// @use "fonts" as fonts;
 
 /* IcoMoon */
-// @import "icons";
+@use "icons";
 
-/* Loaders */
-// @import "loaders";
+/* Font Awesome */
+@use "all.scss"; // without var transform and var animation-delay
+
+/* Ibg */
+@use "ibg"; 
+
+/* Tippy */
+// @use "tippy"; 
+
+/* Swiper */
+// @use "swiperClasses";
 
 /* Light Gallery */
-// @import "lightGallery/indexGallery"; // --- NEW 
+// @use './gallery/lightgallery-bundle';
 
-/* Burger Menu */
-// @import "burger";
-
-/* More */
-// @import "more";
+/* Animation */
+// @use "animation";
 
 /* toTop */
-// @import "toTop";
+// @use "toTop";
+
+/* Loaders */
+// @use "loaders";
+
+/* Burger Menu */
+// @use "burger";
+
+/* More */
+// @use "more";
 
 /* Pagination */
-// @import "pagination";
+// @use "pagination";
 
 /* Pagination2 */
-// @import "pagination2"; // ---  NEW
+// @use "pagination2"; 
 
 /* Checkbox-radio */
-// @import "checkbox-radio";
+// @use "checkbox-radio";
 
 /* Popup */
-// @import "popup";
+// @use "popup";
 
 /* Quantity */
-// @import "quantity";
+// @use "quantity";
 
 /* Drag & Drop */
-// @import "drag&drop";
-
-/* DataPicker */
-// @import "datePicker"; // ---  NEW
-
-/* Spoiler */
-// @import "spoiler";
-
-/* Select*/
-@import "select";
-
-/* Switch */
-// @import "switch";
-
-/* darkTheme */
-// @import "darkTheme"; // ---  NEW
+// @use "drag&drop" as *;
 
 /* Calendar */
-// @import "node_modules/js-datepicker/src/datepicker.scss"; // NEW
+// @use "datePicker"; 
+
+/* Spoiler */
+// @use "spoiler";
+
+/* Select */
+// @use "select";
+
+/* Speed Line */
+// @use "speedLine";
+
+/* Switch */
+// @use "switch";
+
+/* Calculator */
+// @use "calculator";
+
+/* Timer */
+// @use "timer";
+
+/* darkTheme */
+// @use "darkTheme"; 
 
 /* Tabs */
-// @import "tabs";
+// @use "tabs";
 
 /* Zoom */
-// @import "zoom";
+// @use "zoom";
 
 /* Rating */
-// @import "rating";
+// @use "rating";
 
 /* Rating + Score */
-// @import "ratingScore";
-
-// no swiper min.scss
-
-/* NoUiSlider */
-// @import "nouislider.min";
-// @import 'node_modules/nouislider/dist/nouislider';
+// @use "ratingScore";
 
 /* Range */
-// @import "range.scss";
+// @use "range";
+// @use "noUIslider.min";
